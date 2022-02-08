@@ -8,7 +8,7 @@
     <p>{{post.text}}</p>
 
 
-{% if post.authour == current_user %}
+{% if post.author == current_user %}
 <div>
     <a href="{{url_for('blog_posts.update',blog_post_id=post.id)}}">update</a>
     <button type="button" class="btn btn-danger" data-toggle='modal' data-target="#del_modal">Delete</button>
@@ -25,7 +25,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Arenyousure you want to delete the post?</p>
+          <p>Are you sure you want to delete the post?</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
