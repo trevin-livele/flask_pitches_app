@@ -1,1 +1,1 @@
-# flask_pitches_app
+# flask_blog_app
