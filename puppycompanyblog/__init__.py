@@ -12,9 +12,8 @@ app.config['SECRET_KEY'] = 'mysecret'
 ######################################
 ####### DATABASE SETUP ###############
 ######################################
-
-basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'data.sqlite')
+#'postgresql+psycopg2://moringa:blog@localhost/pitch'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://moringa:ashihundu@localhost/pitch'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
