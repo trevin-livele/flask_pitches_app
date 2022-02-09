@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'mysecret'
 ####### DATABASE SETUP ###############
 ######################################
 #'postgresql+psycopg2://moringa:blog@localhost/pitch'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://moringa:ashihundu@localhost/pitch'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
