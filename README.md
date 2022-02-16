@@ -1,4 +1,4 @@
-## Blog Application
+## Pitches Application
 ## Author: TREVIN LIVELE
 ## User Story
 1. See list of pitches.
